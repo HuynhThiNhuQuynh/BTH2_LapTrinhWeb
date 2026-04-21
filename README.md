@@ -1,59 +1,49 @@
-# Bài thực hành số 1 - Lập trình web
+# Bài thực hành số 2 - Lập trình web
 # Huỳnh Thị Như Quỳnh_N23DCCN186
 
-## Chức năng đã thực hiện
+## Các chức năng đã thực hiện
 
-### 1. Header (Thanh điều hướng)
-- Hiển thị logo website
-- Menu điều hướng: Home, Shop, Product, Pages, Blog
-- Hiệu ứng hover underline cho menu
+- Xây dựng ứng dụng React sử dụng Vite  
+- Tổ chức project theo mô hình component và pages  
 
----
+- Cài đặt và sử dụng React Router DOM  
+- Cấu hình định tuyến cho các trang:
+  - Trang Home: `/`
+  - Trang About: `/about-us`
+  - Trang Product: `/product`
 
-### 2. Hero Section (Banner chính)
-- Sử dụng ảnh làm background
-- Nội dung hiển thị:
-  - Tiêu đề: "Reveal The Beauty of Skin"
-  - Mô tả sản phẩm
-  - Giá khởi điểm
-  - Nút "Shop Now"
-- Chữ hiển thị đè lên ảnh (overlay)
-- Căn chỉnh lệch trái theo thiết kế
-- Có hiệu ứng hover cho button
+- Thực hiện chuyển trang bằng thanh điều hướng (Header)  
+- Cho phép truy cập trực tiếp bằng URL và hiển thị đúng nội dung  
 
----
+- Xây dựng trang Home:
+  - Hiển thị Hero banner  
+  - Hiển thị Collection sản phẩm  
 
-### 3. Collection Section
-Hiển thị 3 khối sản phẩm:
-- Summer Collection
-- What's New?
-- Buy 1 Get 1
+- Xây dựng trang About:
+  - Hiển thị nội dung giới thiệu website  
 
-Mỗi card:
-- Sử dụng background image
-- Có hiệu ứng hover:
-  - Nâng lên (translateY)
-  - Overlay nhẹ
-  - Text di chuyển
+- Xây dựng trang Product:
+  - Thanh điều hướng phụ (tabs) sử dụng useState  
+  - Ô tìm kiếm sản phẩm (giao diện)  
+  - Banner sản phẩm gồm:
+    - 1 ảnh lớn bên trái  
+    - 3 ảnh nhỏ bên phải  
+  - Hiệu ứng hover cho hình ảnh  
 
----
+- Sử dụng CSS để:
+  - Thiết kế layout bằng Flexbox  
+  - Tạo hiệu ứng hover  
+  - Căn chỉnh giao diện theo thiết kế  
 
-### 4. Xử lý hình ảnh
-- Sử dụng thư mục `public/images`
-- Gọi ảnh trực tiếp bằng đường dẫn `/images/...`
-- Tối ưu đơn giản, dễ quản lý
+- Quản lý hình ảnh thông qua thư mục `public/images`
 
----
-
-### 5. Giao diện (UI/UX)
+- Giao diện (UI/UX)
 - Layout sử dụng Flexbox
 - Thiết kế tối giản, hiện đại
 - Có hiệu ứng hover tăng trải nghiệm người dùng
-
-
 ---
 
-## ▶️ Cách chạy project
+## Cách chạy project
 
 ```bash
 npm install
