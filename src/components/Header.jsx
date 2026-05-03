@@ -1,23 +1,22 @@
-/*@return {JSX.Element}
-*/
-function Header(){
-    return(
-        <header className="header">
-            {/* Khu vuc hien thi ten thuong hieu hoac logo cua ung dung */}
-            <div className="logo">QUYNHQUYNH</div>
+import { Link } from "react-router-dom";
 
-            {/* Navigation bar chua ds cac lien ket dieu huong chinh */}
-            <nav>
-                <ul>
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>Product</li>
-                    <li>Pages</li>
-                    <li>Blog</li>
-                </ul>
-            </nav>
-        </header>
-    );
+function Header() {
+  return (
+    <header className="header">
+      <div className="logo">GLOWING</div>
+
+      <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about-us">About</Link></li>
+          <li>Shop</li>
+          <li><Link to="/product">Product</Link></li>
+          <li>Pages</li>
+          <li>Blog</li>
+        </ul>
+      </nav>
+    </header>
+  );
 }
 
 export default Header;

@@ -1,19 +1,23 @@
-// Import các component chính
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Collection from "./components/Collection";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-// Import CSS tổng
 import "./styles/style.css";
 
-// Component gốc
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Product from "./pages/Product";
+
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <Hero />
-      <Collection />
-    </>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<About />} />
+        <Route path="/product" element={<Product />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

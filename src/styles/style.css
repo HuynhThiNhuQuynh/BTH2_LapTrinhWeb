@@ -12,6 +12,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
+  background-color: #fac08de8; /* màu nền */
 }
 
 .logo {
@@ -46,6 +47,11 @@
 
 .header li:hover::after {
   width: 100%;
+}
+
+.header a {
+  text-decoration: none;
+  color: black;
 }
 
 /* ================= HERO ================= */
@@ -181,4 +187,109 @@
 /* hover text */
 .card:hover span {
   transform: translateX(10px);
+}
+
+/* ================= PRODUCT HEADER ================= */
+
+.product-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fac08de8; /* màu nền */
+}
+
+/* ===== Tabs ===== */
+.tabs {
+  display: flex;
+  gap: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.tab:hover {
+  background: #ddd;
+}
+
+/* tab đang active */
+.tab.active {
+  background: #ff6a00;
+  color: white;
+}
+
+/* ===== Search ===== */
+.search-box {
+  width: 400px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* ================= PRODUCT BANNER ================= */
+
+.banner {
+  display: flex;
+  gap: 20px;
+  padding: 40px 60px;
+}
+
+/* ===== LEFT (ẢNH LỚN) ===== */
+.banner-left {
+  flex: 2;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.banner-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+/* hover ảnh lớn */
+.banner-left:hover img {
+  transform: scale(1.05);
+}
+
+
+/* ===== RIGHT (ẢNH NHỎ) ===== */
+.banner-right {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+}
+
+/* mỗi item nhỏ */
+.banner-item {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.banner-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.4s;
+}
+
+/* hover ảnh nhỏ */
+.banner-item:hover img {
+  transform: scale(1.05);
 }

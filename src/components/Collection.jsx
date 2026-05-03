@@ -1,4 +1,3 @@
-// Hiển thị 3 card sản phẩm
 function Collection() {
   return (
     <section className="collection">
